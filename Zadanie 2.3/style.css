@@ -90,6 +90,7 @@ html {
   width: 25rem;
   max-height: 15rem;
   overflow: hidden;
+  box-shadow: 4px 4px 8px #222;
   transition-duration: 250ms;
 }
 
@@ -98,6 +99,7 @@ html {
   background-color: #fff;
   opacity: .85;
   transform: scale(1.1);
+  box-shadow: 8px 8px 16px #222;
   transition-duration: 250ms;
 }
 
