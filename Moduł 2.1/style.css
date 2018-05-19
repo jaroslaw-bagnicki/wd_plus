@@ -14,7 +14,7 @@ a:active {
 }
 
 /* Helpers class */
-.u-flex-center {
+.u-hcenter {
   display: flex;
   justify-content: center;
 }
