@@ -1,7 +1,7 @@
 /* Basic setup */
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -21,8 +21,8 @@ a:active {
 
 /* Navbar */
 .navbar {
+  font-weight: 500;
   background-color: #262626;
-  height: 43px; /* How not setting fixed value in open submenu */
 }
 
 .navbar__menu-list {
@@ -43,28 +43,26 @@ a:active {
   padding: .5rem .75rem;
 }
 
-.navbar__menu-item a:hover {
+.navbar__menu-item:hover > a {
   background-color: #595959;
   color: #fff;
 }
 
-/* Navbar: submenu */
+/* Navbar: Submenu */
 .navbar__submenu {
+  display: none;
+  position: absolute;
   list-style-type: none;
   margin: 0;
   padding: 0;
   background-color: #262626;
 }
 
-.navbar__submenu li:not(:first-child)  {
-  display: none;
+.navbar__menu-item:hover .navbar__submenu {
+  display: list-item;
 }
 
-.navbar__submenu:hover li:first-child a {
+.navbar__submenu a:hover {
   background-color: #595959;
   color: #fff;
-}
-
-.navbar__submenu:hover li:not(:first-child)  {
-  display: list-item;
 }
