@@ -22,6 +22,7 @@ a:active {
 /* Navbar */
 .navbar {
   background-color: #262626;
+  height: 43px; /* How not setting fixed value in open submenu */
 }
 
 .navbar__menu-list {
@@ -45,4 +46,25 @@ a:active {
 .navbar__menu-item a:hover {
   background-color: #595959;
   color: #fff;
+}
+
+/* Navbar: submenu */
+.navbar__submenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #262626;
+}
+
+.navbar__submenu li:not(:first-child)  {
+  display: none;
+}
+
+.navbar__submenu:hover li:first-child a {
+  background-color: #595959;
+  color: #fff;
+}
+
+.navbar__submenu:hover li:not(:first-child)  {
+  display: list-item;
 }
