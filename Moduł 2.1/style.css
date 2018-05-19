@@ -1,0 +1,48 @@
+/* Basic setup */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* Helpers class */
+.u-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #262626;
+}
+
+.navbar__menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__menu-item {
+  float: left;
+}
+
+.navbar__menu-item a {
+  display: block;
+  text-align: center;
+  width: 7rem;
+  color: #808080;
+  padding: .5rem .75rem;
+}
+
+.navbar__menu-item a:hover {
+  background-color: #595959;
+  color: #fff;
+}
