@@ -1,0 +1,90 @@
+/* Basic setup */
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  background-color: #7ed6df;
+}
+
+/* Helpers class */
+.container {
+  width: 100%;
+  padding: 2rem;
+}
+
+.u-hcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.u-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Colors from: http://materialuicolors.co
+:root {
+  --black:	#212121;
+} */
+
+.star {
+  display: inline-block;
+  margin: 2em;
+  transform: rotate(22.5deg);
+  transition: background linear .3s;
+  color: var(--black);
+}
+
+.star::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  transform: rotate(45deg);
+}
+
+.star::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  margin:0;
+  position: absolute;
+  background-color: #fff;
+}
+
+.star, 
+.star::before {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+}
+
+.gold, 
+.gold::before {
+  border: 6px solid #ffc107;
+}
+
+.orange, 
+.orange::before {
+  border: 6px solid #fd7e33;
+}
+
+.blue, 
+.blue::before {
+  border: 6px solid #3fb0ac;
+}
+
+i.fa,
+i.far {
+  color:#262626;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  position: absolute;
+  font-size: 60px;
+  transform: rotate(-22.5deg);
+  z-index: 1;
+}
+
+
