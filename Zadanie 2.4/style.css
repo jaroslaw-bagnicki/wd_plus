@@ -31,17 +31,17 @@ html {
 
 
 /* Helpers class */
-.u-hcenter {
-  display: flex;
-  justify-content: center;
-}
-
 .container {
   width: 100%;
   padding: 2rem;
 }
 
-/* Colors form: http://materialuicolors.co */
+.u-hcenter {
+  display: flex;
+  justify-content: center;
+}
+
+/* Colors from: http://materialuicolors.co */
 :root {
   --purple:	#8c3c9a;
   --yellow: #FFB300;
