@@ -43,55 +43,49 @@ html {
 
 /* Colors form: http://materialuicolors.co */
 :root {
-  --btn-purple:	#8c3c9a;
-  --btn-yellow: #FFB300;
-  --btn-blue: #1E88E5;
-  --btn-white: #fafafa;
+  --purple:	#8c3c9a;
+  --yellow: #FFB300;
+  --blue: #1E88E5;
+  --white: #fafafa;
 }
 
 
 /* Buttons */
 .btn {
   display: inline-block;
-  width: 9rem;
+  min-width: 9rem;
   margin: .25rem;
   padding: .625rem;
   border: 2px solid;
   border-radius: 5px;
+  background-position: 100% 0;
+  background-size: 300%;
   text-align: center;
   font-weight: 500;
   color: inherit;
-  transition-duration: .3s;
+  transition-duration: .4s;
 }
 
 .btn:hover {
-  color: var(--btn-white);
-  transition-duration: .3s;
+  color: var(--white);
+  background-position: 0 0;
+  transition-duration: .4s;
 }
 
 .btn--purple {
-  color: var(--btn-purple);
-  border-color: var(--btn-purple);
-}
-
-.btn--purple:hover {
-  background-color: var(--btn-purple);
+  color: var(--purple);
+  border-color: var(--purple);
+  background-image: linear-gradient(90deg, var(--purple) 50%, transparent 50%);
 }
 
 .btn--yellow {
-  color: var(--btn-yellow);
-  border-color: var(--btn-yellow);
-}
-
-.btn--yellow:hover {
-  background-color: var(--btn-yellow);
+  color: var(--yellow);
+  border-color: var(--yellow);
+  background-image: linear-gradient(45deg, var(--yellow) 50%, transparent 50%);
 }
 
 .btn--blue {
-  color: var(--btn-blue);
-  border-color: var(--btn-blue);
-}
-
-.btn--blue:hover {
-  background-color: var(--btn-blue);
+  color: var(--blue);
+  border-color: var(--blue);
+  background-image: linear-gradient(135deg, var(--blue) 50%, transparent 50%);
 }
