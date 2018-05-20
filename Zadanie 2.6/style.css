@@ -1,0 +1,109 @@
+/* Basic setup */
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  background-color: #E0E0E0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* Colors */
+/* Social media brands colors from: https://www.lockedowndesign.com/social-media-colors/ */
+:root {
+  --grey50: #FAFAFA;
+  --grey100: #F5F5F5;
+  --grey200: #EEEEEE;
+  --grey300: #E0E0E0;
+  --grey400: #BDBDBD;
+  --grey500: #9E9E9E;
+  --grey600: #757575;
+  --grey700: #616161;
+  --grey800: #424242;
+  --grey900: #212121;
+  --col-twitter: #1da1f2;
+  --col-facebook: #3b5998;
+  --col-google: #ea4335;
+  --col-instagram: #c32aa3;
+  --col-github: #4078c0;
+}
+
+/* Helpers class */
+.container {
+  padding: 2rem;
+}
+
+.u-hcenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  height: 3rem;
+  font-weight: 600;
+  margin: .5rem 0;
+  color: #757575;
+}
+
+/* Social media panel: Wrapper */
+.smp__wrapper {
+  margin: 0;
+  padding: .5rem;
+}
+
+/* Social media panel: Icons unhover style */
+.smp__icon {
+  position: relative;
+  margin: .25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 99px;
+  background-color: var(--grey50);
+  font-size: 1.125rem;
+  color: var(--grey500);
+  transition-duration: 1s;
+}
+
+/* Fontawesome icon centering */
+.smp__icon:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Social media panel: hover effect */
+.smp__icon:hover::before {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.smp__icon.fa-twitter:hover {
+  background-color: var(--col-twitter);
+}
+
+.smp__icon.fa-facebook-f:hover {
+  background-color: var(--col-facebook);
+}
+
+.smp__icon.fa-google-plus-g:hover {
+  background-color: var(--col-google);
+}
+
+.smp__icon.fa-instagram:hover {
+  background-color: var(--col-instagram);
+}
+
+.smp__icon.fa-github:hover {
+  background-color: var(--col-github);
+}
+
+.smp__icon:hover {
+  transition-duration: .4s;
+}
