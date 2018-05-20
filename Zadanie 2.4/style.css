@@ -1,0 +1,97 @@
+/* Basic setup */
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  background-color: #34495e;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* Box-sizing normalization */
+
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+  *,
+  *::before,
+  *::after {
+      -webkit-box-sizing: inherit;
+         -moz-box-sizing: inherit;
+              box-sizing: inherit;
+}
+
+
+/* Helpers class */
+.u-hcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem;
+}
+
+/* Colors form: http://materialuicolors.co */
+:root {
+  --btn-purple:	#8c3c9a;
+  --btn-yellow: #FFB300;
+  --btn-blue: #1E88E5;
+  --btn-white: #fafafa;
+}
+
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  width: 9rem;
+  margin: .25rem;
+  padding: .625rem;
+  border: 2px solid;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  color: inherit;
+  transition-duration: .3s;
+}
+
+.btn:hover {
+  color: var(--btn-white);
+  transition-duration: .3s;
+}
+
+.btn--purple {
+  color: var(--btn-purple);
+  border-color: var(--btn-purple);
+}
+
+.btn--purple:hover {
+  background-color: var(--btn-purple);
+}
+
+.btn--yellow {
+  color: var(--btn-yellow);
+  border-color: var(--btn-yellow);
+}
+
+.btn--yellow:hover {
+  background-color: var(--btn-yellow);
+}
+
+.btn--blue {
+  color: var(--btn-blue);
+  border-color: var(--btn-blue);
+}
+
+.btn--blue:hover {
+  background-color: var(--btn-blue);
+}
