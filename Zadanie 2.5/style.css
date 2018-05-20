@@ -29,7 +29,6 @@ body {
   margin: 2em;
   transform: rotate(22.5deg);
   /* transition: background linear .3s; /* A co ta linikja ma robić? */
-  color: var(--black);
 }
 
 .star8::before {
@@ -45,6 +44,7 @@ body {
   width: 80px;
   height: 80px;
   background-color: #fff;
+  border: 6px solid;
 }
 
 .star8::after {
@@ -58,17 +58,17 @@ body {
 
 .gold, 
 .gold::before {
-  border: 6px solid #ffc107;
+  border-color: #ffc107;
 }
 
 .orange, 
 .orange::before {
-  border: 6px solid #fd7e33;
+  border-color: #fd7e33;
 }
 
 .blue, 
 .blue::before {
-  border: 6px solid #3fb0ac;
+  border-color: #3fb0ac;
 }
 
 i.fa,
@@ -84,25 +84,26 @@ i.far {
 }
 
 /* Hover effects */
+.star8:hover::before,
+.star8:hover::after {
+  transition: ease-in-out .3s;
+}
+
 .gold:hover::before,
 .gold:hover::after {
   background-color: #ffc107;
-  transition: ease-in-out .3s;
 }
 
 .orange:hover::before,
 .orange:hover::after {
   background-color: #fd7e33;
-  transition: ease-in-out .3s;
 }
 
 .blue:hover::before,
 .blue:hover::after {
   background-color: #3fb0ac;
-  transition: ease-in-out .3s;
 }
 
 .star8:hover i {
   color: #fff;
-  transition: ease-in-out .3s;
 }
