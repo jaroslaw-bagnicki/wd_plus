@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Bootcamp WD+ - Zadanie 3.2</title>
 </head>
 <body>
-  <div class="container">
+  <div class="grid-container">
 
-    <h1 class="header">Custom grid</h1>
+    <h1 class="header">My custom grid</h1>
 
     <div class="row">
       <div class="col-1">1/12</div>
@@ -100,19 +100,41 @@
     </div>
 
     <div class="row">
-        <div class="col-5">
+        <div class="col-5 parent-for-row">
           <div class="row">
             <div class="col-6">nested 6/12</div>
             <div class="col-6">nested 6/12</div>
           </div>
         </div>
-        <div class="col-7">
+        <div class="col-7 parent-for-row">
           <div class="row">
               <div class="col-3">nested 3/12</div>
               <div class="col-3">nested 3/12</div>
               <div class="col-3">nested 3/12</div>
               <div class="col-3">nested 3/12</div>
           </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-offset-1">3/12 offset-1</div>
+        <div class="col-3 col-offset-1">3/12 offset-1</div>
+        <div class="col-3 col-offset-1">3/12 offset-1</div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-offset-3">3/12 offset-3</div>
+        <div class="col-3 col-offset-3">3/12 offset-3</div>
+    </div>
+
+    <div class="row">
+            <div class="col-1 col-offset-5">1/12 o-5</div>
+            <div class="col-4 col-offset-2">4/12 offset-2</div>
+        </div>
+
+    <div class="row">
+        <div class="col-12 footer">
+            &copy; Jarosław Bagnicki 2018
         </div>
     </div>
 
