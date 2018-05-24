@@ -19,20 +19,47 @@ html {
 /* Main styles */
 section {
   width: 100%;
-
 }
 
 .container {
+  width: 100%;
+  height: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
 
+.main-header {
+  background-color: #313332;
+  height: 113px;
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.main-header__logo {
+  font-size: 60px;
+  color: #fefefe;
+  text-transform: uppercase;
+}
+
+.main-header__navbar ul {
+  list-style-type: none;
+}
+
+.main-header__navbar-item {
+  display: inline-block;
+}
+
 /* Helpersclass */
 
-.container {
+/* .container {
   min-height: 500vh;
   background-color: hsla(39, 97%, 71%, .5); 
-}
+} */
 
 
 /* Project from Designer */
