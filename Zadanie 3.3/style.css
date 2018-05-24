@@ -1,0 +1,50 @@
+/* Reset: margins, padding, box-sizing */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+body {
+  box-sizing: border-box; 
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main styles */
+section {
+  width: 100%;
+
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Helpersclass */
+
+.container {
+  min-height: 500vh;
+  background-color: hsla(39, 97%, 71%, .5); 
+}
+
+
+/* Project from Designer */
+.template {
+  width: 1926px;
+  min-height: 4028px;
+  margin: 0 auto;
+  background-image: url(./temp/3-3-website-large.jpg);
+  opacity: 0.3;
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 0;
+  left: -175px
+}
