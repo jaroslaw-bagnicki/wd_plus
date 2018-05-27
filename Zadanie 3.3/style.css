@@ -1,4 +1,4 @@
-/* Reset: margins, padding, box-sizing */
+/* Reset: margins, padding, box-sizing, links */
 *,
 *::after,
 *::before {
@@ -7,8 +7,16 @@
   box-sizing: inherit; 
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 body {
   box-sizing: border-box; 
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Smooth scroll */
@@ -16,62 +24,64 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Main styles */
-section {
-  width: 100%;
+/* VARS: Colors */
+:root {
+  --crl-grey-main: #313234; /* hsl(220, 3%, 20%) */
+  --crl-grey-lighten: #3d3e41; /* hsl(220, 3%, 25%) */
+  --crl-blue-accent: #00c3e5; /* hsl(189, 100%, 45%) */
 }
 
+/* Helper class */
 .container {
   width: 100%;
-  height: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.main-header {
-  background-color: #313332;
-  height: 113px;
+/*---------------*/
+/*  H E A D E R  */
+/*---------------*/
+.header {
+  background-color: var(--crl-grey-main);
+  height: 50px;
 }
 
-.main-header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
+.header__logo { /* header>nav>img */
+  padding: 10px 0;
 }
 
-.main-header__logo {
-  font-size: 60px;
-  color: #fefefe;
-  text-transform: uppercase;
-}
-
-.main-header__navbar ul {
+.header__navbar-list { /* header>nav>ul */
   list-style-type: none;
+  padding: 0;
+  float: right;
 }
 
-.main-header__navbar-item {
+/* Clearfix for navbar-list */
+.header>nav::before,
+.header>nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header__navbar-item { /* header>nav>ul>li */
   display: inline-block;
 }
 
-/* Helpersclass */
+.header__navbar-link {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
 
-/* .container {
-  min-height: 500vh;
-  background-color: hsla(39, 97%, 71%, .5); 
-} */
+.header__navbar-link:hover {
+  color: var(--crl-blue-accent);
+  background-color: var(--crl-grey-lighten);
+}
 
-
-/* Project from Designer */
-.template {
-  width: 1926px;
-  min-height: 4028px;
-  margin: 0 auto;
-  background-image: url(./temp/3-3-website-large.jpg);
-  opacity: 0.3;
-  background-size: cover;
-  background-position: top;
-  position: absolute;
-  top: 0;
-  left: -175px
+.header__navbar-link,
+.header__navbar-link:hover {
+  transition-duration: .3s;
 }
