@@ -27,16 +27,14 @@ body {
   overflow-x: hidden; /* fix to deal with negative horizontal margin in welcome section */
 }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
 /* VARS: Colors */
 :root {
   --crl-grey-main: #313234; /* hsl(220, 3%, 20%) */
   --crl-grey-lighten: #3d3e41; /* hsl(220, 3%, 25%) */
   --crl-blue-accent: #00c3e5; /* hsl(189, 100%, 45%) */
+  --crl-blue-darken: hsl(189, 100%, 35%); /* hsl(189, 100%, 40%) */
+  --crl-black: #18191a; /* hsl(0, 0%, 10%) */
+
 }
 
 /* Helper class */
@@ -123,3 +121,173 @@ html {
   font-weight: 300;
 }
 
+/* ----------------- */
+/*  SECTION: PROFITS */
+/* ----------------- */
+.sect-profits>.container {
+  margin: 50px auto;
+}
+
+.sect-profits__card-box {
+  text-align: center;
+}
+
+.sect-profits__card-icon,
+.sect-profits__card-icon--blue {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  font-size: 30px;
+  line-height: 70px;
+  margin: 15px 0;
+  color: #fff;
+  border-radius: 10px;
+  background-color: var(--crl-black);
+}
+
+.sect-profits__card-icon--blue {
+  background-color: var(--crl-blue-darken);
+}
+
+
+.sect-profits__card-header,
+.sect-profits__card-header--blue {
+  color: var(--crl-black);
+  font-size: 20px;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.sect-profits__card-header--blue {
+  color: var(--crl-blue-darken);
+}
+
+.sect-profits__feature-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sect-profits__feature-header {
+  font-family: 'Robot', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--crl-black);
+}
+
+
+
+/* ------- */
+/* G R I D */
+/* ------- */
+
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Columns defs */
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding: 12px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* Offsets defs */
+.col-offset-0 {
+  margin-left: 0;
+}
+
+.col-offset-1 {
+  margin-left: 8.33%;
+}
+.col-offset-2 {
+  margin-left: 16.66%;
+}
+
+.col-offset-3 {
+  margin-left: 25%;
+}
+
+.col-offset-4 {
+  margin-left: 33.33%;
+}
+
+.col-offset-5 {
+  margin-left: 41.66%;
+}
+
+.col-offset-6 {
+  margin-left: 50%;
+}
+
+.col-offset-7 {
+  margin-left: 58.33%;
+}
+
+.col-offset-8 {
+  margin-left: 66.66%;
+}
+
+.col-offset-9 {
+  margin-left: 75%;
+}
+
+.col-offset-10 {
+  margin-left: 83.33%;
+}
+
+.col-offset-11 {
+  margin-left: 91.66%;
+}
