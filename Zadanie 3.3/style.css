@@ -1,10 +1,18 @@
 /* Reset: margins, padding, box-sizing, links */
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; 
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 a:link,
@@ -15,7 +23,6 @@ a:active {
 }
 
 body {
-  box-sizing: border-box; 
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -38,9 +45,16 @@ html {
   margin: 0 auto;
 }
 
-/*---------------*/
-/*  H E A D E R  */
-/*---------------*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -------- */
+/*  HEADER  */
+/* -------- */
 .header {
   background-color: var(--crl-grey-main);
   height: 50px;
@@ -54,14 +68,6 @@ html {
   list-style-type: none;
   padding: 0;
   float: right;
-}
-
-/* Clearfix for navbar-list */
-.header>nav::before,
-.header>nav::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .header__navbar-item { /* header>nav>ul>li */
@@ -85,3 +91,34 @@ html {
 .header__navbar-link:hover {
   transition-duration: .3s;
 }
+
+/* ----------------- */
+/*  SECTION: WELCOME */
+/* ----------------- */
+.sect-welcome {
+  background-image: url(https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* height: 400px; */
+}
+
+.sect-welcome__slogan-box {
+  background-color: rgba(0, 0, 0, .5);
+  margin: 80px -500px 80px 0;
+  padding: 40px 520px 40px 20px;
+  float: right;
+}
+
+.sect-welcome__slogan {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.sect-welcome__slogan--thin {
+  font-weight: 300;
+}
+
