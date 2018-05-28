@@ -186,7 +186,7 @@ body {
 
 .sect-gallery__image {
   width: 100%;
-  height: calc(100vw / 8);
+  height: 100%;
   object-fit: cover;
 }
 
@@ -209,7 +209,6 @@ body {
   transition-duration: .3s;
 }
 
-
 .sect-gallery__icon {
   display: inline-block;
   margin: 0 25px;
@@ -220,8 +219,67 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: var(--crl-black);
-  
+}
 
+/* --------------- */
+/*  SECTION: TEAM  */
+/* --------------- */
+.sect-team>.container {
+  margin: 50px auto;
+}
+
+.sect-team__card {
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.sect-team__photo-wrapper {
+  margin: 0 auto;
+  width: 22vw;
+  max-width: 260px;
+  height: 22vw;
+  max-height: 260px;
+  position: relative;
+}
+
+.sect-team__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 999px;
+}
+
+.sect-team__job-title-layer {
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 36px;
+  opacity: 0;
+  transition-duration: .3s;
+}
+
+.sect-team__job-title {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; 
+}
+
+.sect-team__photo-wrapper:hover .sect-team__job-title-layer {
+  opacity: 1;
+  transition-duration: .3s;
+}
+
+
+
+.sect-team__name {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--crl-grey-lighten1)
 }
 
 
