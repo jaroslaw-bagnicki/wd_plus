@@ -24,6 +24,7 @@ a:active {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   overflow-x: hidden; /* fix to deal with negative horizontal margin in welcome section */
 }
 
@@ -72,6 +73,7 @@ body {
 
 .header__navbar-item { /* header>nav>ul>li */
   display: inline-block;
+  font-weight: 500;
 }
 
 .header__navbar-link {
@@ -268,8 +270,6 @@ body {
   transition-duration: .3s;
 }
 
-
-
 .sect-team__name {
   margin-top: 15px;
   text-align: center;
@@ -277,6 +277,56 @@ body {
   color: var(--crl-grey-lighten1)
 }
 
+/* ---------------- */
+/*  SECTION: PROMO  */
+/* ---------------- */
+.sect-promo {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .6) 67%, rgba(0, 0, 0, .9)), 
+  url(https://images.pexels.com/photos/984541/pexels-photo-984541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--crl-grey-lighten2);
+}
+
+.sect-promo>.container {
+  padding: 70px 0;
+  overflow: hidden;
+}
+
+.sect-promo__header {
+  font-family: 'Robot', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 20px 15px 20px;
+}
+
+.sect-promo__text,
+.sect-promo__text--italic {
+  display: block;
+  margin: 0 20px;
+}
+
+.sect-promo__text--italic {
+  font-style: italic;
+}
+
+/* .sect-promo__image-wrapper {
+  height: 100%;
+  background-image: 
+  url(http://www.pngmart.com/files/3/IPad-Tablet-PNG-Transparent-Image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -100px; 
+} */
+
+.sect-promo__ipad-img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -400px;
+}
 
 /* ------- */
 /* G R I D */
