@@ -30,9 +30,10 @@ body {
 /* VARS: Colors */
 :root {
   --crl-grey-main: #313234; /* hsl(220, 3%, 20%) */
-  --crl-grey-lighten: #3d3e41; /* hsl(220, 3%, 25%) */
+  --crl-grey-lighten1: #3d3e41; /* hsl(220, 3%, 25%) */
+  --crl-grey-lighten2: #e4e5e6; /* hsl(220, 3%, 790%) */
   --crl-blue-accent: #00c3e5; /* hsl(189, 100%, 45%) */
-  --crl-blue-darken: hsl(189, 100%, 35%); /* hsl(189, 100%, 40%) */
+  --crl-blue-darken: #0097b2; /* hsl(189, 100%, 40%) */
   --crl-black: #18191a; /* hsl(0, 0%, 10%) */
 
 }
@@ -83,7 +84,7 @@ body {
 
 .header__navbar-link:hover {
   color: var(--crl-blue-accent);
-  background-color: var(--crl-grey-lighten);
+  background-color: var(--crl-grey-lighten1);
 }
 
 .header__navbar-link,
@@ -130,6 +131,7 @@ body {
 
 .sect-profits__card-box {
   text-align: center;
+  padding: 30px;
 }
 
 .sect-profits__card-icon,
@@ -149,7 +151,6 @@ body {
   background-color: var(--crl-blue-darken);
 }
 
-
 .sect-profits__card-header,
 .sect-profits__card-header--blue {
   color: var(--crl-black);
@@ -163,8 +164,6 @@ body {
 }
 
 .sect-profits__feature-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -176,6 +175,54 @@ body {
   color: var(--crl-black);
 }
 
+/* ----------------- */
+/*  SECTION: GALLERY */
+/* ----------------- */
+.sect-gallery__gallery-item {
+  position: relative;
+  overflow: hidden;
+  height: calc(100vw / 8);
+}
+
+.sect-gallery__image {
+  width: 100%;
+  height: calc(100vw / 8);
+  object-fit: cover;
+}
+
+.sect-gallery__icons-layer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  text-align: center;
+  line-height: calc(100vw / 8);
+}
+
+.sect-gallery__gallery-item:hover .sect-gallery__icons-layer {
+  top:0;
+}
+
+.sect-gallery__icons-layer,
+.sect-gallery__gallery-item:hover .sect-gallery__icons-layer {
+  transition-duration: .3s;
+}
+
+
+.sect-gallery__icon {
+  display: inline-block;
+  margin: 0 25px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--crl-grey-lighten2);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--crl-black);
+  
+
+}
 
 
 /* ------- */
@@ -193,7 +240,6 @@ body {
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  padding: 12px;
 }
 
 .col-1 {
