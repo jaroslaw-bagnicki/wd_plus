@@ -23,8 +23,9 @@ a:active {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  line-height: 1.5;
   overflow-x: hidden; /* fix to deal with negative horizontal margin in welcome section */
 }
 
@@ -79,6 +80,7 @@ body {
 .header__navbar-link {
   display: inline-block;
   padding: 0 20px;
+  /* font-family: 'Open Sans', sans-serif; */
   line-height: 50px;
   color: #fff;
   text-transform: uppercase;
