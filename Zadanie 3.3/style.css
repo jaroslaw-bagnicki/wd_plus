@@ -30,13 +30,13 @@ body {
 
 /* VARS: Colors */
 :root {
-  --crl-grey-main: #313234; /* hsl(220, 3%, 20%) */
-  --crl-grey-lighten1: #3d3e41; /* hsl(220, 3%, 25%) */
-  --crl-grey-lighten2: #e4e5e6; /* hsl(220, 3%, 790%) */
-  --crl-blue-accent: #00c3e5; /* hsl(189, 100%, 45%) */
-  --crl-blue-darken: #0097b2; /* hsl(189, 100%, 40%) */
-  --crl-black: #18191a; /* hsl(0, 0%, 10%) */
-
+  --clr-grey-main: #313234; /* hsl(220, 3%, 20%) */
+  --clr-grey-darken: #252527; /* hsl(220, 3%, 15%) */
+  --clr-grey-lighten: #3d3e41; /* hsl(220, 3%, 25%) */
+  --clr-blue-accent: #00c3e5; /* hsl(189, 100%, 45%) */
+  --clr-blue-darken: hsl(189, 100%, 40%); /* hsl(189, 100%, 40%) */
+  --clr-black: #18191a; /* hsl(0, 0%, 10%) */
+  --clr-white: #e4e5e6; /* hsl(220, 3%, 90%) */
 }
 
 /* Helper class */
@@ -57,7 +57,7 @@ body {
 /*  HEADER  */
 /* -------- */
 .header {
-  background-color: var(--crl-grey-main);
+  background-color: var(--clr-grey-main);
   height: 50px;
 }
 
@@ -85,8 +85,8 @@ body {
 }
 
 .header__navbar-link:hover {
-  color: var(--crl-blue-accent);
-  background-color: var(--crl-grey-lighten1);
+  color: var(--clr-blue-accent);
+  background-color: var(--clr-grey-lighten);
 }
 
 .header__navbar-link,
@@ -146,23 +146,23 @@ body {
   margin: 15px 0;
   color: #fff;
   border-radius: 10px;
-  background-color: var(--crl-black);
+  background-color: var(--clr-black);
 }
 
 .sect-profits__card-icon--blue {
-  background-color: var(--crl-blue-darken);
+  background-color: var(--clr-blue-accent);
 }
 
 .sect-profits__card-header,
 .sect-profits__card-header--blue {
-  color: var(--crl-black);
+  color: var(--clr-black);
   font-size: 20px;
   margin: 5px 0;
   text-transform: uppercase;
 }
 
 .sect-profits__card-header--blue {
-  color: var(--crl-blue-darken);
+  color: var(--clr-blue-accent);
 }
 
 .sect-profits__feature-wrapper {
@@ -175,7 +175,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   text-transform: uppercase;
-  color: var(--crl-black);
+  color: var(--clr-black);
 }
 
 /* ----------------- */
@@ -217,11 +217,11 @@ body {
   margin: 0 25px;
   width: 24px;
   height: 24px;
-  background-color: var(--crl-grey-lighten2);
+  background-color: var(--clr-white);
   border-radius: 4px;
   font-size: 16px;
   line-height: 24px;
-  color: var(--crl-black);
+  color: var(--clr-black);
 }
 
 /* --------------- */
@@ -275,7 +275,7 @@ body {
   margin-top: 15px;
   text-align: center;
   font-weight: 700;
-  color: var(--crl-grey-lighten1)
+  color: var(--clr-grey-lighten)
 }
 
 /* ---------------- */
@@ -289,7 +289,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: var(--crl-grey-lighten2);
+  color: var(--clr-white);
 }
 
 .sect-promo__header {
@@ -345,7 +345,6 @@ body {
 .sect-counters__counter,
 .sect-counters__counter-label {
   display: block;
-  font-family: 'Roboto', sans-serif;
 }
 
 .sect-counters__counter {
@@ -353,13 +352,101 @@ body {
   font-size: 48px;
   font-weight: 900;
   margin-bottom: 5px;
+  color: var(--clr-black);
 }
 
 .sect-counters__counter-label {
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--crl-blue-darken);
+  color: var(--clr-blue-accent);
+}
+
+/* -------- */
+/*  FOOTER  */
+/* -------- */
+.footer__main-part {
+  background-color: var(--clr-grey-main);
+  color: var(--clr-white);
+}
+
+.footer__wrapper {
+  padding: 20px 15px;
+}
+
+.footer__wrapper {
+  padding: 20px 15px;
+}
+
+.footer__header {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  margin-bottom: 7px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__header::after {
+  content: "";
+  background: var(--clr-white);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.footer__text {
+  font-size: 15px;
+}
+
+.footer__contact-box {
+  display: table;
+  border-spacing: 5px 10px;
+  font-size: 15px
+}
+
+.footer__contact-row {
+  display: table-row;
+}
+
+.footer__contact-label,
+.footer__contact-data {
+  display: table-cell;
+}
+
+.footer__contact-label {
+  width: 33%;
+  font-weight: 600;
+}
+
+.footer__social-media-icons-set {
+  margin-top: 18px;
+}
+
+.footer__social-media-icon {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+  background-color: var(--clr-blue-darken);
+  color: var(--clr-white);
+  margin-right: 7px;
+
+}
+
+.footer__copyrights {
+  background-color: var(--clr-grey-darken);
+  height: 36px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  color: var(--clr-white);
 }
 
 
