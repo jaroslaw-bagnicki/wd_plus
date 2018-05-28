@@ -312,20 +312,25 @@ body {
   font-style: italic;
 }
 
-/* .sect-promo__image-wrapper {
-  height: 100%;
-  background-image: 
-  url(http://www.pngmart.com/files/3/IPad-Tablet-PNG-Transparent-Image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: -100px; 
-} */
+.sect-promo__minigallery-wrapper {
+  height: 300px;
+  margin-bottom: -100px;
+  position: relative;
+}
 
 .sect-promo__ipad-img {
+  position: absolute;
+  padding: 0 20px;
   width: 100%;
   object-fit: cover;
-  margin-bottom: -400px;
+  z-index: 1;
+}
+
+.sect-promo__minigallery-img {
+  position: absolute;
+  padding: 56px 44px 0;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* ------- */
