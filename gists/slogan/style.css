@@ -1,0 +1,53 @@
+/* Resets: margins, paddings, box-sizing */
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Main styles */
+body {
+  overflow-x: hidden;
+}
+
+.section {
+  background-color: aliceblue;
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: bisque;
+}
+
+.slogan-box {
+  background-color: rgba(0, 0, 0, .5);
+  margin: 120px -500px 120px 0;
+  padding: 40px 530px 40px 30px;
+  float: right;
+}
+
+.slogan {
+  font-size: 32px;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
