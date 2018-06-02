@@ -37,7 +37,9 @@ body {
 
 /* Main styles */
 
-/* Header */
+/* ----------- */
+/* H e a d e r */
+/* ----------- */
 .header {
   position: absolute;
   top: 0;
@@ -75,7 +77,6 @@ body {
 .header__nav-link:hover {
   background-color: rgba(255, 255, 255, .10);
   color: hsl(351, 100%, 65%);
-  
 }
 
 .header__nav-link,
@@ -83,8 +84,10 @@ body {
   transition-duration: .3s;
 }
 
+/* ------------- */
 /* Section: Hero */
-.section__hero {
+/* ------------- */
+.hero {
   height: 100vh;
   background: url(https://images.pexels.com/photos/566888/pexels-photo-566888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-repeat: no-repeat;
@@ -92,20 +95,43 @@ body {
   background-position: center;
 }
 
-.section__hero-header {
+.hero__header {
   font-size: 5rem;
   margin-top: 45vh;
   padding: 1.5rem 2rem;
   color: hsl(351, 100%, 65%);
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(255, 255, 255, .1);
   border-radius: 1rem;
   float: right;
 }
 
-
+/* ---------------- */
+/* Section: Gallery */
+/* ---------------- */
 .gallery {
-  height: 200px;
-  background-color: #74b9ff;
+  margin: 5rem 0;
+  /* background-color: #74b9ff; */
+}
+
+.gallery__photo-wrapper {
+  float: left;
+  width: 30%;
+}
+
+.gallery__photo-wrapper:not(:last-of-type) {
+  margin-right: 5%;
+}
+.gallery__photo-wrapper:hover {
+  transform: scale(1.25);
+}
+
+.gallery__photo-wrapper,
+.gallery__photo-wrapper:hover {
+  transition: all .3s  ease-in-out;
+}
+
+.gallery__photo {
+  width: 100%;
 }
 
 .map {
