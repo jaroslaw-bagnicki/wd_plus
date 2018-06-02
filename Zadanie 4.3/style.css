@@ -3,6 +3,7 @@ html {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 62.5%; /* Defined 1rem as 10px */
 }
 
 *,
@@ -28,16 +29,79 @@ body {
   line-height: 1.5;
 }
 
-/* Main styles */
-.header {
-  height: 70px;
-  background-color: #8e44ad;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.main {
-  height: 300px;
-  background-color: #ffeaa7;
+/* Main styles */
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5em;
+  /* background-color: rgba(0, 0, 0, .05); */
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, .3);
 }
+
+.header__logo {
+  height: 5rem;
+}
+
+.header__nav {
+  float: right;
+}
+
+.header__nav-list {
+  list-style-type: none;
+}
+
+.header__nav-item {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 5rem;
+}
+
+.header__nav-link {
+  display: inline-block;
+  padding: 0 2rem;
+  color: hsl(0, 0%, 90%);
+}
+
+.header__nav-link:hover {
+  background-color: rgba(255, 255, 255, .10);
+  color: hsl(351, 100%, 65%);
+  
+}
+
+.header__nav-link,
+.header__nav-link:hover {
+  transition-duration: .3s;
+}
+
+/* Section: Hero */
+.section__hero {
+  height: 100vh;
+  background: url(https://images.pexels.com/photos/566888/pexels-photo-566888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section__hero-header {
+  font-size: 5rem;
+  margin-top: 45vh;
+  padding: 1.5rem 2rem;
+  color: hsl(351, 100%, 65%);
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 1rem;
+  float: right;
+}
+
 
 .gallery {
   height: 200px;
@@ -53,4 +117,25 @@ body {
 .footer {
   height: 70px;
   background-color: #34495e;
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+  .header {
+    background-color: aqua;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px)  {
+  .header {
+    background-color: red;  
+  }
+}
+
+@media (min-width: 1200px)  {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: rgba(0, 0, 0, .2); */
+  }
 }
