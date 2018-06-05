@@ -62,6 +62,10 @@ body {
   height: 50px;
 }
 
+.header__logo-wrapper { /* header>nav>img */
+  display: inline-block;
+}
+
 .header__logo { /* header>nav>img */
   padding: 10px 0;
 }
@@ -562,4 +566,52 @@ body {
 
 .col-offset-11 {
   margin-left: 91.66%;
+}
+
+/* ------------- */
+/* Media queries */
+/* ------------- */
+
+/* DESKTOPS */
+@media (min-width: 1200px)  {
+  
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1199px)  {
+  .header__logo-wrapper {
+    display: none;
+  }
+
+  .header__navbar-list {
+    float: none;
+    text-align: center;
+  }
+}
+
+/* PHONES */
+@media (max-width: 767px) {
+  .header {
+    height: auto;
+  }
+
+  .header__logo-wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .header__navbar-list {
+    float: none;
+  }
+
+  .header__navbar-item,
+  .header__navbar-link {
+    display: block;
+  }
+
+  .header__navbar-link {
+    padding: 0;
+    line-height: 2;
+    text-align: center;
+  }
 }
