@@ -281,13 +281,12 @@ body {
 
 .sect-promo__minigallery-wrapper {
   height: 300px;
-  margin-bottom: -100px;
+  margin: 0 20px -100px;
   position: relative;
 }
 
 .sect-promo__ipad-img {
   position: absolute;
-  padding: 0 20px;
   width: 100%;
   object-fit: cover;
   z-index: 1;
@@ -295,7 +294,7 @@ body {
 
 .sect-promo__minigallery-img {
   position: absolute;
-  padding: 56px 44px 0;
+  padding: 15% 7% 0;
   width: 100%;
   object-fit: cover;
 }
@@ -552,6 +551,14 @@ body {
     content: ')';
   }
 
+  .sect-promo {
+    padding: 50px 0;
+  }
+
+  .no-tablet {
+    display: none;
+  }
+
   /* Grid for tablets */
   .col-m-1 {width: 8.33%;}
   .col-m-2 {width: 16.66%;}
@@ -663,6 +670,19 @@ body {
 
   .sect-team__job-title--mobile::after {
     content: ')';
+  }
+
+  .sect-promo {
+    padding: 30px 0;
+  }
+
+  .sect-promo__header {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  .no-phone {
+    display: none;
   }
 
   /* Grid dor phone */
