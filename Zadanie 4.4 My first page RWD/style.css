@@ -614,4 +614,15 @@ body {
     line-height: 2;
     text-align: center;
   }
+
+  .sect-welcome__slogan-box {
+    margin: 80px 20px;
+    padding: 30px 15px;
+    float: none;
+    text-align: center;
+  }
+
+  .sect-welcome__slogan {
+    font-size: 27px;
+  }
 }
