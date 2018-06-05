@@ -189,7 +189,8 @@ body {
 .sect-gallery__gallery-item {
   position: relative;
   overflow: hidden;
-  height: calc(100vw / 8);
+  height: auto;
+  line-height: 0;
 }
 
 .sect-gallery__image {
@@ -200,21 +201,8 @@ body {
 
 .sect-gallery__icons-layer {
   position: absolute;
-  top: 100%;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .5);
   text-align: center;
-  line-height: calc(100vw / 8);
-}
-
-.sect-gallery__gallery-item:hover .sect-gallery__icons-layer {
-  top:0;
-}
-
-.sect-gallery__icons-layer,
-.sect-gallery__gallery-item:hover .sect-gallery__icons-layer {
-  transition-duration: .3s;
 }
 
 .sect-gallery__icon {
@@ -498,39 +486,28 @@ body {
 .col-offset-10 {margin-left: 83.33%;}
 .col-offset-11 {margin-left: 91.66%;}
 
-/* For mobile */
-.col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
-.col-s-3 {width: 25%;}
-.col-s-4 {width: 33.33%;}
-.col-s-5 {width: 41.66%;}
-.col-s-6 {width: 50%;}
-.col-s-7 {width: 58.33%;}
-.col-s-8 {width: 66.66%;}
-.col-s-9 {width: 75%;}
-.col-s-10 {width: 83.33%;}
-.col-s-11 {width: 91.66%;}
-.col-s-12 {width: 100%;}
-.col-s-offset-0 {margin-left: 0;}
-.col-s-offset-1 {margin-left: 8.33%;}
-.col-s-offset-2 {margin-left: 16.66%;}
-.col-s-offset-3 {margin-left: 25%;}
-.col-s-offset-4 {margin-left: 33.33%;}
-.col-s-offset-5 {margin-left: 41.66%;}
-.col-s-offset-6 {margin-left: 50%;}
-.col-s-offset-7 {margin-left: 58.33%;}
-.col-s-offset-8 {margin-left: 66.66%;}
-.col-s-offset-9 {margin-left: 75%;}
-.col-s-offset-10 {margin-left: 83.33%;}
-.col-s-offset-11 {margin-left: 91.66%;}
-
 /* ------------- */
 /* Media queries */
 /* ------------- */
 
 /* DESKTOPS */
 @media (min-width: 1200px)  {
-  
+  .sect-gallery__icons-layer {
+    top: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    line-height: calc(100vw / 8);
+  }
+
+  .sect-gallery__gallery-item:hover .sect-gallery__icons-layer {
+    top:0;
+  }
+
+  .sect-gallery__icons-layer,
+  .sect-gallery__gallery-item:hover .sect-gallery__icons-layer {
+    transition-duration: .3s;
+  }
+
 }
 
 /* TABLETS */
@@ -543,6 +520,39 @@ body {
     float: none;
     text-align: center;
   }
+
+  .sect-gallery__icons-layer {
+    display: none;
+    /* top: 0;
+    height: 40px;
+    line-height: 40px; */
+  }
+
+  /* Grid for tablets */
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+  .col-m-offset-0 {margin-left: 0;}
+  .col-m-offset-1 {margin-left: 8.33%;}
+  .col-m-offset-2 {margin-left: 16.66%;}
+  .col-m-offset-3 {margin-left: 25%;}
+  .col-m-offset-4 {margin-left: 33.33%;}
+  .col-m-offset-5 {margin-left: 41.66%;}
+  .col-m-offset-6 {margin-left: 50%;}
+  .col-m-offset-7 {margin-left: 58.33%;}
+  .col-m-offset-8 {margin-left: 66.66%;}
+  .col-m-offset-9 {margin-left: 75%;}
+  .col-m-offset-10 {margin-left: 83.33%;}
+  .col-m-offset-11 {margin-left: 91.66%;}
 }
 
 /* PHONES */
@@ -598,5 +608,38 @@ body {
     text-transform: uppercase;
     color: var(--clr-black);
   }
+
+  .sect-gallery__icons-layer {
+    display: none;
+    /* top: 0;
+    height: 40px;
+    line-height: 40px; */
+  }
+
+  /* Grid dor mobile */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .col-s-offset-0 {margin-left: 0;}
+  .col-s-offset-1 {margin-left: 8.33%;}
+  .col-s-offset-2 {margin-left: 16.66%;}
+  .col-s-offset-3 {margin-left: 25%;}
+  .col-s-offset-4 {margin-left: 33.33%;}
+  .col-s-offset-5 {margin-left: 41.66%;}
+  .col-s-offset-6 {margin-left: 50%;}
+  .col-s-offset-7 {margin-left: 58.33%;}
+  .col-s-offset-8 {margin-left: 66.66%;}
+  .col-s-offset-9 {margin-left: 75%;}
+  .col-s-offset-10 {margin-left: 83.33%;}
+  .col-s-offset-11 {margin-left: 91.66%;}
 
 }
