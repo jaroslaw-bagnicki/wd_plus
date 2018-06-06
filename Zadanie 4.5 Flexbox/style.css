@@ -1,0 +1,86 @@
+body {
+  font-family: 'Raleway', serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flex {
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+}
+
+.container {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #16a085;
+  color: #fff;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.jumbotron {
+  justify-content: center;
+  align-items: center;
+  background-color: #ffeaa7;
+  height: 30vh;
+}
+
+.gallery {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image {
+  margin: 20px 0;
+}
+
+.cards {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #dfe6e9;
+}
+
+.narrow-box {
+  width: 50%;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+footer {
+  align-items: flex-start;
+  background-color: #eb4d4b;
+  color: #fff;
+}
+
+.copyrigts,
+.company-name,
+.adress {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+
+.company-name {
+  flex-grow: 2;
+  justify-content: center;
+  align-self: center;
+}
