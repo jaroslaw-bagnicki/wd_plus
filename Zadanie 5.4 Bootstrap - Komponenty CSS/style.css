@@ -10,6 +10,14 @@
   margin-bottom: 1rem;
 }
 
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
 .py-4 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -22,3 +30,8 @@
 .mx-auto {
   margin: 0 auto;
 }
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
