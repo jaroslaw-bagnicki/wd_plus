@@ -38,3 +38,17 @@
 .gallery [class*="col-"] {
   text-align: center;
 }
+
+/* Fixing Panels' equal height in multicolumn layout */
+@media (min-width: 768px) {
+
+  .panels .row {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .panels .panel {
+    height: 100%;
+  }
+
+}
