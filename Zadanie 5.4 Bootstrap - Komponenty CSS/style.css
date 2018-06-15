@@ -31,7 +31,10 @@
   margin: 0 auto;
 }
 
-/* img {
-  width: 100%;
-  height: auto;
-} */
+.gallery .thumbnail {
+  display: inline-block;
+}
+
+.gallery [class*="col-"] {
+  text-align: center;
+}
