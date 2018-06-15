@@ -38,9 +38,3 @@
 .gallery [class*="col-"] {
   text-align: center;
 }
-
-.media-text {
-  overflow: hidden;
-  /* white-space: nowrap; */
-  text-overflow: ellipsis;
-}
