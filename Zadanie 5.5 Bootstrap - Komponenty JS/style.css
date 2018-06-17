@@ -1,3 +1,4 @@
+
 .dropdown-menu {
   min-width: 100%;
   text-align: center;
@@ -48,28 +49,13 @@
   padding-bottom: 3rem;
 }
 
-.mx-auto {
-  margin: 0 auto;
-}
 
-.gallery .thumbnail {
-  display: inline-block;
-}
-
-.gallery [class*="col-"] {
-  text-align: center;
-}
 
 /* Fixing Panels' equal height in multicolumn layout */
 @media (min-width: 768px) {
 
-  .panels .row {
-    display: flex;
-    align-items: stretch;
-  }
-
-  .panels .panel {
-    height: 100%;
+  .modal-trailer {
+    width: 75%;
   }
 
 }

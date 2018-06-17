@@ -9,28 +9,33 @@
   <title>Bootcamp WD plus - Zadanie 5.4 Bootstrap - komponenty CSS</title>
 </head>
 <body>
-
   <!-- Navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
 
       <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsable">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
         <a class="navbar-brand" href="#!">Brand</a>
       </div>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#!">Link 1</a></li>
-        <li><a href="#!">Link 2</a></li>
-        <li><a href="#!">Link 3</a></li>
-        <li class="dropdown">
-          <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#!">Link 4.1</a></li>
-            <li><a href="#!">Link 4.2</a></li>
-            <li><a href="#!">Link 4.3</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbar-collapsable">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#!">Link 1</a></li>
+          <li><a href="#!">Link 2</a></li>
+          <li><a href="#!">Link 3</a></li>
+          <li class="dropdown">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#!">Link 4.1</a></li>
+              <li><a href="#!">Link 4.2</a></li>
+              <li><a href="#!">Link 4.3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>  
 
@@ -94,15 +99,24 @@
               <p>Westworld is an American science fiction western television series created by Jonathan Nolan and Lisa Joy. Produced by HBO, it is based on the 1973 film of the same name (written and directed by Michael Crichton) and to a lesser extent its 1976 sequel, Futureworld. The story takes place in Westworld, a fictional, technologically advanced Wild-West-themed amusement park populated by android "hosts". The park caters to high-paying "guests" who may indulge their wildest fantasies within the park without fear of retaliation from the hosts, who are prevented by their programming from harming humans.</p>
               <p>Nolan and Joy serve as executive producers, along with J. J. Abrams, Jerry Weintraub, and Bryan Burk. The first season premiered on October 2, 2016, and concluded on December 4, 2016; it comprised ten episodes. In November 2016, HBO renewed the series for a ten-episode second season, which premiered on April 22, 2018. The series' debut on HBO garnered the network's highest viewership ratings for a premiere since the first episode of True Detective in 2014. Moreover, Westworld ranks as the most-watched first season of any HBO original series. On May 1, 2018, the series was renewed for a third season.</p>
               <p>The series has received largely positive reviews from critics, with particular praise having been given for its visuals, story, and performances.</p>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#westworld-trailer">
+                  Westword Season 2 Trailer
+              </button>
               <p class="text-right"><em>Source: <a href="https://en.wikipedia.org/wiki/Westworld_(TV_series)" target="_blank">Wikipedia</a></em></p>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="game-of-thrones">
               <p>Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones. It is filmed in Belfast and elsewhere in the United Kingdom, Canada, Croatia, Iceland, Malta, Morocco, Spain, and the United States. The series premiered on HBO in the United States on April 17, 2011, and its seventh season ended on August 27, 2017. The series will conclude with its eighth season premiering in 2019.</p>
               <p>Set on the fictional continents of Westeros and Essos, Game of Thrones has several plot lines and a large ensemble cast but centers on three primary story arcs. The first story arc centers on the Iron Throne of the Seven Kingdoms and follows a web of alliances and conflicts among the dynastic noble families either vying to claim the throne or fighting for independence from the throne. The second story arc focuses on the last descendant of the realm's deposed ruling dynasty, exiled and plotting a return to the throne. The third story arc centers on the longstanding brotherhood charged with defending the realm against the ancient threats of the fierce peoples and legendary creatures that lie far north, and an impending winter that threatens the realm.</p>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#game-of-thrones-trailer">
+                  Game Of Thrones Season 8 Trailer
+              </button>
               <p class="text-right"><em>Source: <a href="https://en.wikipedia.org/wiki/Game_of_Thrones" target="_blank">Wikipedia</a></em></p>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="silicon-valley">
               <p>In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. A comedy partially inspired by Mike Judge's own experiences as a Silicon Valley engineer in the late 1980s.</p>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#silicon-valley-trailer">
+                  Silicon Valley Season 5 Trailer
+              </button>
               <p class="text-right"><em>Source: <a href="https://www.imdb.com/title/tt2575988/" target="_blank">IMDb</a></em></p>
             </div>
           </div>
@@ -111,169 +125,82 @@
     </div>
   </div>
 
-  <!-- Section: Gallery -->
-  <section class="gallery mb-5">
-    <div class="container">
-      <h2 class="text-center">Gallery</h2>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <img class="img-thumbnail mb-4" src="https://picsum.photos/300/300/?image=10" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <img class="img-thumbnail mb-4" src="https://picsum.photos/300/300/?image=11" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <img class="img-thumbnail mb-4" src="https://picsum.photos/300/300/?image=12" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <img class="img-thumbnail mb-4" src="https://picsum.photos/300/300/?image=13" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: Gallery -->
-  <section class="gallery mb-5">
-    <div class="container">
-      <h2 class="text-center">Gallery</h2>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="#!" class="thumbnail">
-            <img src="https://picsum.photos/300/300/?image=10" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="#!" class="thumbnail">
-            <img src="https://picsum.photos/300/300/?image=11" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="#!" class="thumbnail">
-            <img src="https://picsum.photos/300/300/?image=12" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="#!" class="thumbnail">
-            <img src="https://picsum.photos/300/300/?image=13" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: Media object  -->
-  <section class="media-object mb-5">
-    <div class="container">
-      <h2 class="text-center">Media Object</h2>
-      <div class="media">
-        <div class="media-left">
-          <a href="#!">
-            <img src="https://lh3.googleusercontent.com/x5csEZoE6_6y0WmpMw2qbsAka_j1C3gE7T0QD4sK5C7MgJlCnaDHYxYva3ozmOMx-QZt=s151" alt="" class="media-object">
-          </a>
-        </div>
-        <div class="media-body">
-          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
-            <h4 class="media-heading">A Complete Guide to Flexbox</h4>
-          </a>
-          <div class="media-text">
-            <p>The Flexbox Layout (Flexible Box) module (currently a W3C Last Call Working Draft) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word "flex").</p>
-            <p>The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow.</p> <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+  <!-- Modals -->
+  <div id="westworld-trailer" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-trailer">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>
+              Westworld Season 2 Trailer
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </h4>
+          </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com//embed/sjVqDg32_8s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
-      </div>  
-    </div>
-  </section>
+      </div>
+    </div> 
+  </div>
 
-  <!-- Section: Panels -->
-  <section class="panels mb-5">
-    <div class="container">
-      <h2 class="text-center">Panels (Cards)</h2>
-      <div class="row">
-
-        <div class="col-md-4 col-xs-12">
-          <div class="panel panel-info">
-              <div class="panel-heading">Info panel</div>
-              <div class="panel-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae delectus possimus, incidunt reprehenderit obcaecati sit officiis vel suscipit molestiae saepe consequatur necessitatibus et maiores!
-              </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 col-xs-12">
-          <div class="panel panel-warning">
-              <div class="panel-heading">Warning panel</div>
-              <div class="panel-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, explicabo similique incidunt debitis ipsam ab ducimus vel ex iure voluptate maxime eum aspernatur facere omnis labore minima. Assumenda quibusdam delectus nulla dicta error, vero accusamus, rerum ea placeat, molestiae minima.
-              </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 col-xs-12">
-          <div class="panel panel-danger">
-              <div class="panel-heading">Danger panel</div>
-              <div class="panel-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel qui praesentium voluptates modi eius! Quae corporis ad doloribus officia quis!
-              </div>
-            </div>
+  <div id="game-of-thrones-trailer" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-trailer">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>
+              Game Of Thrones Season 8 Trailer
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </h4>
+          </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v5gsVRxzzI4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </div> 
+  </div>
 
-  <!-- Section: Table -->
-  <section class="table-and-contact pb-5">
-    <div class="container">
-      <h2 class="text-center">Table & Contact</h2>
-      <div class="row">
-        <div class="col-md-7 col-sm-6 col-xs-12">
-            <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>John Doe</td>
-                <td>jdoe@gmail.com</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Mary Smitd</td>
-                <td>mary.s@yahoo.com</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Steve Novac</td>
-                <td>steve-novac@outlook.com</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-5 col-sm-6 col-xs-12">
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" name="name" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" name="email" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea name="message" cols="30" rows="4" class="form-control" placeholder="Leave your message ..."></textarea>
-            </div>
-            <input type="submit" class="btn btn-default btn-block" value="Submit">
-          </form>
+  <div id="silicon-valley-trailer" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-trailer">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>
+              Silicon Valley Season 5 Trailer
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </h4>
+          </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/H7pYslGR6GU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </div> 
+  </div>
+
+  <div id="silicon-valley-trailer" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-trailer">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>
+              Silicon Valley Season 5 Trailer
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </h4>
+          </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/H7pYslGR6GU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+
+
+
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
