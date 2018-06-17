@@ -1,0 +1,25 @@
+.row {
+  background-color: rgba(0, 0, 0, .1)
+}
+
+.height-300px {
+  height: 300px;
+}
+
+.height-100pct {
+  height: 100%;
+}
+
+/* Fixing Panels' equal height in multicolumn layout */
+@media (min-width: 768px) {
+  .flex-stretch-1 {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .flex-stretch-2,
+  .flex-stretch-2 [class*="col-"] {
+    display: flex;
+    align-items: stretch;
+  }
+}
