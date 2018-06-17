@@ -17,14 +17,8 @@
   max-width: none;
 }
 
-.header-slogan {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px 35px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, .5);
+.carousel-inner > .item {
+  overflow: hidden;
 }
 
 /* In Bootsrap 4 there are nice spacing classes */
@@ -39,6 +33,10 @@
 
 .mb-5 {
   margin-bottom: 3rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
 }
 
 .py-4 {
