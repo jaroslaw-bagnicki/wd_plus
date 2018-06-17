@@ -1,7 +1,9 @@
+.navbar-nav a {
+  text-align: center;
+}
 
 .dropdown-menu {
   min-width: 100%;
-  text-align: center;
 }
 
 .header {
@@ -49,25 +51,19 @@
   padding-bottom: 3rem;
 }
 
-
-
-/* Fixing Panels' equal height in multicolumn layout */
-
 @media (max-width: 767px) {
   .header {
     height: auto;
   }
 
   #header-carousel img {
-    height: 40vh;
+    height: 45vh;
     max-width: none;
   }
 }
 
 @media (min-width: 768px) {
-
   .modal-trailer {
     width: 70%;
   }
-
 }
