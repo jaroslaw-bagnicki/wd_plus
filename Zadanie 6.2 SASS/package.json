@@ -1,7 +1,7 @@
 {
-  "name": "gulp_test",
+  "name": "sample-page",
   "version": "1.0.0",
-  "description": "Gulp + SASS test project",
+  "description": "Sample page with SASS styles",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
