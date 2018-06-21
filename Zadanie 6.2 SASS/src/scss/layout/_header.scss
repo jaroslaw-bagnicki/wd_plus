@@ -1,0 +1,75 @@
+.header {
+  background-color: $clr-grey-main;
+  height: 50px;
+
+  &__logo-wrapper {
+    display: inline-block;
+  }
+
+  &__logo {
+    padding: 10px 0;
+  }
+
+  &__navbar-list {
+    list-style-type: none;
+    padding: 0;
+    float: right;
+  }
+
+  &__navbar-item {
+    display: inline-block;
+    font-weight: 500;
+  }
+
+  &__navbar-link {
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    transition-duration: .3s;
+
+    &:hover {
+      color: $clr-blue-accent;
+      background-color: $clr-grey-lighten;
+      transition-duration: .3s;
+    }
+  }
+
+  @include tablet  {
+    &__logo-wrapper {
+      display: none;
+    }
+  
+    &__navbar-list {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  @include phone {
+    & {
+      height: auto;
+    }
+
+    &__logo-wrapper {
+      display: block;
+      text-align: center;
+    }
+  
+    &__navbar-list {
+      float: none;
+    }
+  
+    &__navbar-item,
+    &__navbar-link {
+      display: block;
+    }
+  
+    &__navbar-link {
+      padding: 0;
+      line-height: 2;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.footer {
+  &__main-part {
+    background-color: $clr-grey-main;
+    color: $clr-white;
+  }
+  
+  &__wrapper {
+    padding: 0 15px;
+  }
+  
+  &__header {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin: 20px 0 7px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      background: $clr-white;
+      display: inline-block;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      margin-left: 5px;
+    }
+  }
+  
+  &__text {
+    font-size: 15px;
+  }
+  
+  &__contact {
+    &-box {
+      display: table;
+      border-spacing: 5px 10px;
+      font-size: 15px;
+    }
+    
+    &-row {
+      display: table-row;
+    }
+    
+    &-label,
+    &-data {
+      display: table-cell;
+    }
+    
+    &-label {
+      width: 33%;
+      font-weight: 600;
+    }
+  }
+
+  &__social-media {
+    &-icons-set {
+      margin-top: 18px;
+      @include tablet {
+        & {
+          text-align: center;
+          margin-bottom: 14px;
+        }
+      }
+      @include phone {
+        & {
+          text-align: center;
+          margin-top: 7px;
+          margin-bottom: 14px;
+        }
+      }
+    }
+    
+    &-icon {
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 32px;
+      background-color: $clr-blue-darken;
+      color: $clr-white;
+      margin-right: 7px;
+    }
+  }
+  
+  &__copyrights {
+    background-color: $clr-grey-darken;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    color: $clr-white;
+  }
+
+  @include phone {
+    &__header {
+      margin-top: 15px;
+      text-align: center;
+    }
+  
+    &__header span {
+      position: relative;
+      &::before {
+        content: "";
+        background: $clr-white;
+        display: inline-block;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        right:100%;
+        width: 400px;
+        margin-right: 5px;
+      }
+    }
+  
+    &__contact-box {
+      margin: 0 auto;
+    }
+  }
+}
+

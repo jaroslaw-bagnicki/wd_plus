@@ -1,0 +1,71 @@
+.sect-promo {
+  padding: 70px 0;
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .6) 67%, rgba(0, 0, 0, .9)), 
+  url(https://images.pexels.com/photos/984541/pexels-photo-984541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $clr-white;
+
+  &__header {
+    font-family: $ff-header;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 20px 15px 20px;
+  }
+
+  &__text,
+  &__text--italic {
+    display: block;
+    margin: 0 20px;
+  }
+
+  &__text--italic {
+    font-style: italic;
+  }
+  
+  &__minigallery-wrapper {
+    height: 300px;
+    margin: 0 20px -100px;
+    position: relative;
+  }
+  
+  &__ipad-img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  &__minigallery-img {
+    position: absolute;
+    padding: 15% 7% 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @include tablet {
+    & {
+      padding: 50px 0;
+    }
+  }
+
+  @include phone {
+    & {
+      padding: 30px 0;
+    }
+
+    &__header {
+      font-size: 27px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+.sect-gallery {
+  &__gallery-item {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    line-height: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__icons-layer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin: 0 25px;
+    width: 24px;
+    height: 24px;
+    background-color: $clr-white;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $clr-black;
+  }
+
+  @include desktop {
+    &__icons-layer {
+      top: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      line-height: calc(100vw / 8);
+    }
+
+    &__gallery-item:hover &__icons-layer {
+      top:0;
+    }
+  
+    &__icons-layer,
+    &__gallery-item:hover &__icons-layer {
+      transition-duration: .3s;
+    }
+  }
+}
+
+
+
+
+
+
+

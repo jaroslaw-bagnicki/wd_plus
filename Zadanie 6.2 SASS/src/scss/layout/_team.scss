@@ -1,0 +1,99 @@
+.sect-team {
+  &__card {
+    margin: 70px auto;
+  }
+  
+  &__photo-wrapper {
+    margin: 0 auto;
+    width: 22vw;
+    max-width: 260px;
+    height: 22vw;
+    max-height: 260px;
+    position: relative;
+  }
+  
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 999px;
+  }
+  
+  &__name {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: $clr-grey-lighten;
+  }
+
+  @include desktop {
+    &__job-title {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; 
+
+      &-layer {
+        display: table;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 999px;
+        color: #fff;
+        font-size: 36px;
+        opacity: 0;
+        transition-duration: .3s;
+      }
+
+      &--mobile {
+        display: none;
+      }
+    }
+  
+    &__photo-wrapper:hover &__job-title-layer {
+      opacity: 1;
+      transition-duration: .3s;
+    }
+  }
+
+  @include tablet {
+     &__card {
+      margin: 40px auto;
+    }
+
+    &__job-title {
+      &-layer {
+        display: none;
+      }
+    
+      &--mobile {
+        display: block;
+        &::before {content: '(';};
+        &::after {content: ')';};
+      }
+    }
+  }
+
+  @include phone {
+    &__photo-wrapper {
+      width: 44vw;
+      height: 44vw;
+    }
+  
+    &__card {
+      margin: 30px auto;
+    }
+
+    &__job-title {
+      &-layer {
+        display: none;
+      }
+    
+      &--mobile {
+        display: block;
+        &::before {content: '(';};
+        &::after {content: ')';};
+      }
+    }
+  }
+}

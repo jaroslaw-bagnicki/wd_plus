@@ -1,0 +1,42 @@
+.sect-welcome {
+  background-image: url(https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  &__slogan-box {
+    background-color: rgba(0, 0, 0, .5);
+    margin: 120px -500px 120px 0;
+    padding: 40px 520px 40px 20px;
+    overflow: hidden;
+    float: right;
+  }
+
+  &__slogan {
+    font-family: $ff-header;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+
+    &--thin {
+      font-weight: 300;
+    }
+  }
+
+  @include phone {
+    &__slogan-box {
+      margin: 80px 20px;
+      padding: 30px 15px;
+      float: none;
+      text-align: center;
+    }
+  
+    &__slogan {
+      font-size: 27px;
+    }
+  }
+
+}
+
