@@ -16,11 +16,29 @@ gulp.task('sass', () => gulp.src('src/scss/main.scss')
   .pipe(gulp.dest('dist'))
 );
 
+// Compile Sass & Stream
+gulp.task('sass-stream', () => gulp.src('src/scss/main.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(rename('style.css'))
+  .pipe(gulp.dest('dist'))
+  .pipe(browserSync.stream())
+);
+
 // Watch task
-gulp.task('watch', () => {
+gulp.task('watch', ['copyHtml', 'sass'], () => {
   gulp.watch('src/*.html', ['copyHtml']);
   gulp.watch('src/scss/**/*.scss', ['sass']);
 });
 
+// Serve & watch task
+gulp.task('serve', ['copyHtml', 'sass'], () => {
+  browserSync.init({
+    server: './dist'
+  });
+  gulp.watch('src/scss/**/*.scss', ['sass-stream']);
+  gulp.watch('src/*.html', ['copyHtml']).on('change', browserSync.reload);
+  }
+);
+
 // Default action
-gulp.task('default', ['watch']);
+gulp.task('default', ['serve']);
